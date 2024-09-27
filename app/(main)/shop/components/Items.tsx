@@ -67,7 +67,7 @@ const Items = ({ hearts, points, hasActiveSubscription }: Props) => {
         </Button>
       </li>
 
-      {/* <li className="flex items-center w-full p-4 pt-8 gap-x-4 border-t-2">
+      <li className="flex items-center w-full p-4 pt-8 gap-x-4 border-t-2">
         <Image src="/unlimited.svg" alt="Unlimited" height={60} width={60} />
 
         <div className="flex-1">
@@ -79,7 +79,7 @@ const Items = ({ hearts, points, hasActiveSubscription }: Props) => {
         <Button disabled={pending} onClick={handleUpgrade}>
           {hasActiveSubscription ? "settings" : "upgrade"}
         </Button>
-      </li> */}
+      </li>
     </ul>
   );
 };

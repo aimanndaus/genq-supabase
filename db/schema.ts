@@ -67,11 +67,12 @@ export const challenges = pgTable("challenges", {
     .notNull(),
   type: challengesEnum("type").notNull(),
   question: text("question").notNull(),
+  assist_question: text("assist question")
+    .notNull()
+    .default("Select the correct answer"),
   order: integer("order").notNull(),
   audioUrl: text("audio_url"),
   imgUrl: text("img_url"),
-  //   imgSrc: text("img_src"),
-  //   audioSrc: text("audio_src"),
 });
 
 export const challengesRelations = relations(challenges, ({ many, one }) => ({
@@ -90,6 +91,7 @@ export const challengeOptions = pgTable("challenge_options", {
     .notNull(),
   text: text("text").notNull(),
   correct: boolean("correct").notNull(),
+  isArabic: boolean("is_arabic").notNull(),
   imgSrc: text("img_src"),
   audioSrc: text("audio_src"),
 });

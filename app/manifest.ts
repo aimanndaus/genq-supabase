@@ -27,14 +27,14 @@ export default function manifest(): Manifest {
     background_color: "#ffffff",
     screenshots: [
       {
-        src: "/genq_first.png",
+        src: "/genq-first.png",
         sizes: "800x500",
         type: "image/png",
         // @ts-ignore
         form_factor: "wide",
       },
       {
-        src: "/genq_responsive.png",
+        src: "/genq-responsive.png",
         sizes: "381x831",
         type: "image/png",
       },

@@ -17,6 +17,10 @@ const config = {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      sans: ["Inter", "sans-serif"],
+      AmiriQuran: ["Amiri Quran", "serif"],
+    },
     extend: {
       colors: {
         darkblue: "#1468CF",

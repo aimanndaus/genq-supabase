@@ -1,0 +1,1 @@
+ALTER TABLE "challenges" ADD COLUMN "question1" text NOT NULL;

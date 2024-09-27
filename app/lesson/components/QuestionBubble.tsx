@@ -44,7 +44,9 @@ export const QuestionBubble: FC<QuestionBubbleProps> = ({
       />
 
       <div className="relative py-3 px-4 border-2 rounded-xl gap-5 flex text-4xl font-bold lg:5xl">
-        <h1 className="mt-2 text-center"> {question}</h1>
+        <h1 className="mt-2 text-right font-AmiriQuran" lang="ar" dir="rtl">
+          {question}
+        </h1>
         <div onClick={handleClick} className="flex gap-2">
           <Button variant="default" className="mt-2">
             {audio}

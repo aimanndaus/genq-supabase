@@ -23,10 +23,10 @@ export const Challenge: FC<ChallengeProps> = ({
   return (
     <div
       className={cn(
-        "grid gap-2",
+        "grid gap-3",
         type === "ASSIST" && "grid-cols-2",
-        type === "SELECT" &&
-          "grid-cols-2  lg:grid-cols-[repeat(auto-fit,minmax(0,1fr))]"
+        type === "SELECT" && "grid-cols-1"
+        //   lg:grid-cols-[repeat(auto-fit,minmax(0,1fr))] old value
       )}
     >
       {options.map((option, i) => (
@@ -42,8 +42,24 @@ export const Challenge: FC<ChallengeProps> = ({
           audioSrc={option.audioSrc}
           disabled={disabled}
           type={type}
+          isArabic={option.isArabic}
         />
       ))}
     </div>
   );
 };
+{
+  /* <Card
+  id={1}
+  text="مرحبا"
+  imgSrc={null}
+  shortcut="A"
+  selected={false}
+  onClick={() => {}}
+  status="none"
+  audioSrc={null}
+  disabled={false}
+  type="ASSIST"
+  isArabic={true} // Set to true for Arabic content
+/> */
+}

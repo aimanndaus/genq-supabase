@@ -1,0 +1,27 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1726566571772,
+      "tag": "0000_silky_ken_ellis",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1726806240357,
+      "tag": "0001_famous_supernaut",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1726935798372,
+      "tag": "0002_little_rocket_racer",
+      "breakpoints": true
+    }
+  ]
+}

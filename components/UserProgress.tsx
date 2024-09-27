@@ -32,7 +32,7 @@ export const UserProgress = ({
         </Button>
       </Link>
 
-      <Link href="/shop">
+      <Link href="/quests">
         <Button className="text-orange-500" variant="defaultOutline">
           <Image
             src="/points.svg"
